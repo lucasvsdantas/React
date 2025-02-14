@@ -1,20 +1,22 @@
-import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const name = "Lucas";
+  const url = "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM="
 
-  return (
-    <>
-      <div>
-        <h1>Olá React</h1>
-        <p>Meu primeiro App</p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  function sum(a, b){
+    return a+b;
+  }
+    return (
+      <>
+        <div className='App'>
+          <h1>Olá React</h1>
+          <h2>Bem-vindo {name}</h2>
+          <p>Soma: {sum(1, 2)}</p>
+          <img src={url} alt="Minha imagem" />
+        </div>
+      </>
+    )
 }
 
 export default App
